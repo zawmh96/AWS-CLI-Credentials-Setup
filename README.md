@@ -26,7 +26,10 @@ $ cat ~/.aws/config
 `[profile programmatic-admin]`<br>
 `region = ap-northeast-1`<br>
 `output = json`<br>  
-`$ cat ~/.aws/credentials` <br>
+
+```
+$ cat ~/.aws/credentials
+```
 `[programmatic-admin]`<br>
 `aws_access_key_id = *************xxxx`<br>
 `aws_secret_access_key = **************xxxx`<br>
