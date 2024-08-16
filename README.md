@@ -12,7 +12,7 @@ If you instead got `command not found`, then you need to install `awscli`. Refer
 
 2. Run `aws configure` and provide the following values:<br>
 ```
-$ aws configure --profile master-programmatic-admin
+$ aws configure --profile programmatic-admin
 ```
 `AWS Access Key ID [*************xxxx]:` -> Your AWS Access Key ID<br>
 `AWS Secret Access Key [**************xxxx]:` -> Your AWS Secret Access Key<br>
