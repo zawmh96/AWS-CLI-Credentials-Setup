@@ -1,4 +1,4 @@
-# AWS-CLI-Credentials-Setup  
+# AWS CLI Credentials Setup  
 This is setup for configuration and credentials used by the AWS CLI to access your AWS account.  
 
 1. To see if the AWS CLI is installed:<br>
