@@ -10,7 +10,7 @@ $ aws --version
 If you instead got `command not found`, then you need to install `awscli`. Refer to the link below to install `awscli`.<br>
 <https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html>
 
-2. Run `aws configure` and provide the following values:<br>
+2. Run `aws configure` and provide the following values for IAM User:   :<br>
 ```
 $ aws configure --profile programmatic-admin
 ```
@@ -25,7 +25,7 @@ $ cat ~/.aws/config
 ```
 `[profile programmatic-admin]`<br>
 `region = ap-northeast-1`<br>
-`output = json`<br>  
+`output = json`<br> 
 
 ```
 $ cat ~/.aws/credentials
@@ -34,7 +34,18 @@ $ cat ~/.aws/credentials
 `aws_access_key_id = *************xxxx`<br>
 `aws_secret_access_key = **************xxxx`<br>
 
-5. To see if credentail works  
+4. To see if credentail works  
 ```
 $ aws iam list-users --profile programmatic-admin
 ```
+
+5. Edit config file for IAM Role and add as below:
+```
+vi ~/.aws/config
+```
+```
+[profile master-programmatic-admin-role]
+region = ap-northeast-1
+output = json
+role_arn = arn:aws:iam::xxxxxxxxxxxx:role/programmatic-admin-role
+source_profile = programmatic-admin
