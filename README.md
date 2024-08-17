@@ -44,7 +44,7 @@ $ aws iam list-users --profile programmatic-admin
 vi ~/.aws/config
 ```
 ```
-[profile master-programmatic-admin-role]
+[profile programmatic-admin-role]
 region = ap-northeast-1
 output = json
 role_arn = arn:aws:iam::xxxxxxxxxxxx:role/programmatic-admin-role
